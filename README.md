@@ -6,10 +6,10 @@ Para levantar la aplicación en el servidor local, ejecute el siguente comando:
 npm run dev
 ```
 
-user:nexttesttestnext@gmail.com
-pass:testnext123
+`user`: nexttesttestnext@gmail.com
+`pass`: testnext123
 
-## Detalle tecnicos
+## Detalle técnicos
 
 👉 `Simplificación del enrutamiento`: Utilizando el sistema de enrutamiento de páginas basado en la estructura de directorios de la carpeta pages de Next.js. Cada archivo en esta carpeta se convierte automáticamente en una ruta de la aplicación.\
 👉 `Estilos`: Estilado con Tailwind CSS para una interfaz moderna y eficiente. Permite aplicar estilos directamente en los componentes con clases utilitarias.\
