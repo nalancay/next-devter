@@ -1,13 +1,24 @@
-## Iniciar el proyecto:
+### Pasos para ejecutar el proyecto localmente
 
-Para levantar la aplicación en el servidor local, ejecute el siguente comando:
+1. **Clonar el repositorio**:
 
-```bash
-npm run dev
-```
+   - Clone el repositorio en un directorio local de su elección.
 
-`user`: nexttesttestnext@gmail.com
-`pass`: testnext123
+2. **Instalar dependencias**:
+
+   - Navegue hasta el directorio raíz del proyecto.
+   - Instale los paquetes necesarios con el siguiente comando:
+     ```bash
+     npm install
+     ```
+
+3. **Iniciar el proyecto**:
+   - Levante el proyecto con el siguiente comando:
+     `bash
+     npm run dev
+     `
+     `user`: nexttesttestnext@gmail.com .\
+     `pass`: testnext123
 
 ## Detalle técnicos
 
