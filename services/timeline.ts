@@ -1,6 +1,6 @@
 import { makeRequest } from "./services.utils";
 
-const URL_IN_PRODUCTION = "https://nalancay-next-devter.netlify.app";
+const URL_IN_PRODUCTION = "https://nalancay-devter.netlify.app";
 const URL_IN_LOCAL = "http://localhost:3000";
 
 const URL_ENDPOINT = `${
