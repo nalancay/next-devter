@@ -1,38 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Link webSite
 
-## Getting Started
+[Clickear este enlace para ver aplicacion](https://nalancay-next-devter.netlify.app).
 
-First, run the development server:
+## Iniciar el proyecto:
+
+Para levantar la aplicación en el servidor local, ejecute el siguente comando:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Detalle tecnicos
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+👉 `**Simplificación del enrutamiento**`: Utilizando el sistema de enrutamiento de páginas basado en la estructura de directorios de la carpeta pages de Next.js. Cada archivo en esta carpeta se convierte automáticamente en una ruta de la aplicación.
+👉 Estilos: Estilado con Tailwind CSS para una interfaz moderna y eficiente. Permite aplicar estilos directamente en los componentes con clases utilitarias.
+👉 Gestión de Estado: La aplicación está envuelta con AppContext y AppLayout a nivel global, permitiendo consumir y configurar datos comunes en toda la aplicación de manera sencilla.
+👉 Custom Hooks: Implementación de useFetchList para llamadas a la API.
+👉 Rutas Dinámicas: Manejo flexible de rutas con parámetros variables.
+👉 Aplicación SPA: Funciona como una Single Page Application (SPA), es decir, no se vuelve a recargar la página.
+👉 Mock de API: Mock de llamadas a la API en la carpeta api.
+👉 Loading: Indicador de carga mientras se espera la respuesta del servidor.
+👉 Manejo de Errores: Muestra errores en caso de fallos del servidor, ya sea por falta de conexión a internet u otros motivos.
+👉 Realiza filtrado de busqueda por useName
+👉 Este proyecto sigue principios de SOLID y buenas prácticas de desarrollo, incluyendo la reutilización de código y la responsabilidad única. Por ej. generateTimesline ubicado en test/factores se aplico:
+1- Responsabilidad Única: Cada función tiene una única responsabilidad. generateTimeline se encarga de crear un objeto de timeline, mientras que generateTimesline se encarga de generar una lista de estos objetos.
+2- Abierto/Cerrado: El código está abierto a la extensión pero cerrado a la modificación. Si necesitas cambiar la forma en que se generan los timelines, puedes extender el código sin necesidad de modificar las funciones existentes.
+3- Inversión de Dependencia: Se usa faker y lodash/range como dependencias externas, pero estas se inyectan y utilizan de manera que el código principal no depende directamente de implementaciones específicas de estas bibliotecas.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Tecnologías Utilizadas
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+✅ Reutilización de Código: Por ej. La función generateTimeline es reutilizada dentro de generateTimesline para generar múltiples elementos de timeline, promoviendo la reutilización de código.
+✅ Modularidad: El código está modularizado en pequeños compoentes y reutilizables, lo que facilita el mantenimiento y la extensión del código, por ej. SearchPage y HomePage reutilizan el componente ListDevists.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tecnologías Utilizadas
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+✨ Next.js: Framework de React que permite renderizado del lado del servidor (SSR) y generación estática de páginas (SSG).
+✨ Tailwind CSS: Framework de CSS utilitario para diseñar interfaces rápidas y modernas.
+✨ TypeScript: Superconjunto de JavaScript que agrega tipado estático al lenguaje.
