@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import useUser from "@/hooks/useUser";
-import { addDevit, uploadImage } from "@/firebase/client";
+import { uploadImage } from "@/firebase/client";
 import { UploadTask } from "firebase/storage";
 import { useAppContext } from "@/pages/AppContext";
 
