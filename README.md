@@ -1,7 +1,3 @@
-# Link webSite
-
-[Clickear este enlace para ver aplicacion](https://nalancay-next-devter.netlify.app).
-
 ## Iniciar el proyecto:
 
 Para levantar la aplicación en el servidor local, ejecute el siguente comando:
@@ -9,6 +5,9 @@ Para levantar la aplicación en el servidor local, ejecute el siguente comando:
 ```bash
 npm run dev
 ```
+
+user:nexttesttestnext@gmail.com
+pass:testnext123
 
 ## Detalle tecnicos
 
