@@ -14,11 +14,12 @@
 
 3. **Iniciar el proyecto**:
    - Levante el proyecto con el siguiente comando:
-     `bash
+   ```bash
      npm run dev
-     `
-     `user`: nexttesttestnext@gmail.com .\
-     `pass`: testnext123
+   ```
+   .\
+   `user`: nexttesttestnext@gmail.com .\
+   `pass`: testnext123
 
 ## Detalle técnicos
 
