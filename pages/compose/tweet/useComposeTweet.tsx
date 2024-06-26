@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
 import useUser from "@/hooks/useUser";
 import { uploadImage } from "@/firebase/client";
 import { UploadTask } from "firebase/storage";
@@ -29,21 +28,6 @@ export const useComposeTweet = () => {
   const { setAppContext } = useAppContext();
 
   const user = useUser();
-  const router = useRouter();
-
-  useEffect(() => {
-    if (task) {
-      const onProgress = () => {};
-      const onError = () => {};
-      const onComplete = () => {
-        task.snapshot.ref.getDownloadURL().then((downloadURL: string) => {
-          setImgURL(downloadURL);
-        });
-      };
-
-      task.on("state_changed", onProgress, onError, onComplete);
-    }
-  }, [task]);
 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     const { value } = event.target;
