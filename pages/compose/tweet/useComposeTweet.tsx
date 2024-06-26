@@ -53,20 +53,6 @@ export const useComposeTweet = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setStatus(COMPOSE_STATES.LOADING);
-    addDevit({
-      avatar: user?.avatar || "",
-      content: message,
-      userId: user?.uid || "",
-      userName: user?.username || "",
-      img: imgURL,
-    })
-      .then(() => {
-        router.push("/home");
-      })
-      .catch((err) => {
-        console.error(err);
-        setStatus(COMPOSE_STATES.ERROR);
-      });
   };
 
   const handleDragEnter = (e: React.DragEvent<HTMLTextAreaElement>) => {
