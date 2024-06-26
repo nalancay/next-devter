@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Clone Twitter 🐦</title>
+        <title>Devter 🐦</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>

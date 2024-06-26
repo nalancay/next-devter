@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import useUser from "@/hooks/useUser";
 import { uploadImage } from "@/firebase/client";
 import { UploadTask } from "firebase/storage";
-import { useAppContext } from "@/pages/AppContext";
+import { useAppContext } from "@/components/AppContext";
 
 const COMPOSE_STATES = {
   USER_NOT_KNOWN: 0,

@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
 import { Avatar } from "../Avatar";
-import { useAppContext } from "@/pages/AppContext";
+import { useAppContext } from "../AppContext";
 
 type AppLayoutProps = {
   children: ReactNode;

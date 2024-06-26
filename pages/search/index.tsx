@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ListDevists } from "@/components/ListDevits";
 import useUser from "@/hooks/useUser";
-import { useAppContext } from "../AppContext";
+import { useAppContext } from "@/components/AppContext";
 
 export default function SearchPage() {
   const [searchTerm, setSearchTerm] = useState("");
