@@ -1,7 +1,3 @@
-# Link webSite
-
-[Clickear este enlace para ver webSite](https://nalancay-devter.netlify.app).
-
 ### Pasos para ejecutar el proyecto localmente
 
 1. **Clonar el repositorio**:
